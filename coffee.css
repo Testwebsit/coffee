@@ -1,0 +1,484 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap'); */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+.all-content{
+    background: #fffcf8;
+}
+html ::-webkit-scrollbar-track{
+    background: transparent;
+}
+html ::-webkit-scrollbar-thumb{
+    background: #b2744c;
+    border-radius: 10px;
+}
+html ::-webkit-scrollbar{
+    width: 10px;
+}
+/* ===============================================Nav bar======================================== */
+
+#navbar{
+    background: #d2744c;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 11111;
+}
+#logo img{
+    border-radius: 10px;
+    width: 300px;
+    margin-left: 40px;
+}
+.navbar-nav{
+    margin-left: 50px;
+}
+.nav-item .nav-link{
+    color: black;
+    margin-left: 10px;
+    font-weight: bold;
+    transition: 0.2s;
+    font-size: 25px;
+    
+}
+.nav-item .nav-link:hover{
+    background-color: #fffcf9;
+    border-radius: 5px;
+    color: black;
+}
+#navbar form button{
+    background: black;
+    color: white;
+    border: 1px solid #ffffff;
+}
+/* ============================= Section ============================== */
+
+#home{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(./Image/Bkf9VP.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 88%;
+}
+#home .content{
+    padding-top: 210px;
+    margin-left: 56px;
+}
+#home .content h3{
+    font-size: 50px;
+    color: white;
+}
+#home .content p{
+    margin-top: 10px;
+    color: white;
+}
+#btn{
+    width: 150px;
+    height: 36px;
+    margin-top: 20px;
+    background: white;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: #d2744c;
+    color: white;
+}
+/* ================================about section =================== */
+
+#about{
+    width: 100%;
+    height: 100%;
+    
+}
+#about .coontainer{
+    padding-top: 70px;
+}
+.heading{
+    text-align: center;
+    margin-bottom: 50px;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.heading span{
+    color: #d2744c;
+    
+}
+#about .card{
+    border-radius: 20px;
+    border: none;
+}
+#about p:hover{
+    color: blue;
+}
+#about p{
+    font-size: 21px;
+}
+#about .card img{
+    border-radius: 10px;
+    transition: 0.2s;
+    
+}
+#about .card img:hover{
+    transform: scale(.96);
+}
+#about-btn{
+    width: 200px;
+    height: 36px;
+    background: transparent;
+    border: 2px solid #b2744c;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    color: #b2744c;
+}
+#about-btn:hover{
+    background-color: #b2744c;
+    color: white;
+}
+@media screen and (max-width:982px){
+    #about p{
+        font-size: 8px;
+    }
+}
+@media screen and (max-width:766px){
+    #about p{
+        font-size: 15px;
+    }
+    /* #about{
+        height: 120vh;
+    } */
+}
+
+/* =====================Top Card ======================= */
+#top-cards{
+    width: 100%;
+    /* height: 60vh; */
+    background: #f7f5f2;
+    margin-top: 120px;
+}
+.heading2{
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.heading2 span{
+    color: #b2744c;
+}
+#top-cards .container{
+    margin-top: 30px;
+}
+#top-cards .card{
+    border-radius: 10px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+#top-cards .card img{
+    border-radius: 10px;
+}
+#top-cards .card:hover{
+    transform: translateY(-15px);
+}
+
+
+/* ================================== Menu ============================= */
+
+#menu{
+    width: 100%;
+    margin-top: 120px;
+}
+.heading3{
+    text-align: center;
+    font-size: 30px;
+    color: #b2744c;
+    font-weight: bold;
+    border-bottom: 2px solid #b2744c;
+}
+#container2{
+    margin-top: 30px;
+
+}
+#menu .card{
+    border: 1px solid brown;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.star i{
+    color: #fa9703;
+}
+#menu h3{
+    text-align: center;
+    color: #b2744c;
+    margin-top: 10px;
+    font-size: 26px;
+}
+#menu p{
+    font-size: 16px;
+    color: #b2744c;
+    padding-top: 10px;
+}
+#menu p span{
+    float: right;
+    cursor: pointer;
+}
+#menu p strike{
+    color: rgb(69, 68, 68);
+}
+#menu .card:hover{
+    transform: translateY(-15px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+/* ===================== Product ========================= */
+
+#product{
+    width: 100%;
+    margin-top: 120px;
+    cursor: pointer;
+}
+.heading4{
+    text-align: center;
+    color: #b2744c;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 80px;
+    border-bottom: 2px solid #b2744c;
+    padding-bottom: 10px;
+}
+#container{
+    margin-top: 20px;
+   
+}
+#product h3{
+    text-align: center;
+    color: #b2744c;
+    font-size: 23px;
+}
+#product p span{
+    float: right;
+    cursor: pointer;
+}
+/* ==================== Gallery ================== */
+#gallary{
+    width: 100%;
+    margin-top: 120px;
+}
+.heading5{
+    text-align: center;
+    color: black;
+    margin-top: 60px;
+    font-weight: bold;
+    font-size: 30px;
+}
+#gallary .heading5 span{
+    color: #b2744c;
+}
+#gallary .card{
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+#gallary .card img{
+    border-radius: 10px;
+    transition: 0.3s;
+}
+#gallary .card img:hover{
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* ===================== Contact ========================= */
+#contact{
+    width: 100%;
+    height: 100vh;
+    padding-top: 70px;
+    margin-top: 120px;
+}
+#contact .container{
+    width: 100%;
+    height: 70vh;
+    background: linear-gradient(90deg, rgb(234, 196, 146) 80%,#b2744c 20%);
+    border-radius: 10px;
+}
+.heading6{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 70px;
+}
+.heading6 span{
+    color: #b2744c;
+}
+.row #p-con p{
+    font-size: 18px;
+    color: #000000;
+} 
+#contact p{
+    font-weight: bold;
+    font-size: 13px;
+    color: black;
+}
+#contact #col p a{
+    font-size: 18px;
+    padding-left: 5px;
+    color: blanchedalmond;
+}
+#contact input{
+    width: 360px;
+    border: none;
+    border-bottom: 1px solid #b2744c;
+}
+#contact-btn{
+    width: 200px;
+    height: 36px;
+    border: none;
+    background-color: #b2744c;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    transform: 0.3s;
+}
+#contact-btn:hover{
+    transform: scale(1.04);
+    background-color: black;
+    color: #ffffff;
+}
+#col{
+    width: 40%;
+    height: 50vh;
+    background-color: black;
+    margin-top: 78px;
+    border-radius: 10px;
+}
+#contact h1{
+    color: #f7f5f2;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#contact #col p{
+    font-size: 16px;
+    color: #ffffff;
+    margin-left: 13px;
+    margin-top: 30px;
+}
+@media screen and (max-width:766px){
+    #contact .container{
+        background-color: white;
+    }
+    #col{
+        width: 100%;
+       background: #b2744c;
+    }
+    #contact{
+        height: 150vh;
+    }
+}
+@media screen and (max-width:400px){
+    #contact input{
+        width: 250px;
+    }
+}
+
+/* ===================== Bloge ======================= */
+#blogs{
+    width: 100%;
+    margin-top: 90px;
+}
+#blogs .heading7{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+}
+#blogs .heading7 span{
+    color: #b2744c;
+}
+#blogs .container{
+    margin-top: 60px;
+}
+#blogs h5{
+    color: #b2744c;
+}
+#blog-btn{
+   width: 200px;
+   height: 36px;
+   border: none;
+   color: white;
+   background: #b2744c;
+   cursor: pointer;
+   border-radius: 8px;
+}
+
+/* ============== Footer ================= */
+#footer{
+   width: 100%;
+   background: #b2744c;
+   margin-top: 50px;
+
+}
+.footer-logo img{
+    width: 180px;
+    border-radius: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+#footer .socail-links i{
+    font-size: 17px;
+    margin-left: 10px;
+    margin-top: 30px;
+    padding: 10px;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#footer .socail-links i:hover{
+    color: rgb(135, 0, 0);
+    background-color: #f4f4f4;
+}
+
+
+
+
+.credits{
+    color: white;
+    margin-top: 20px;
+    text-shadow: opx opx 1px black;
+}
+.credits a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.crerdits a span{
+    color: black;
+}
+.copyright span{
+    color: black;
+}
+
+/* ====================================== */
+ html{
+    scroll-behavior: smooth;
+ }
+ .arrow{
+    position: fixed;
+    height: 50px;
+    bottom: 50px;
+    right: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 50px;
+    color: black;
+ }
